@@ -46,3 +46,39 @@ func insertBook(title string, price float64) (err error) {
 	}
 	return
 }
+
+// 删除数据
+func deleteBook(id int64) (err error) {
+	sqlStr := `delete from book where id = ?`
+	_, err = db.Exec(sqlStr,id)
+	if err != nil {
+		fmt.Println("删除书籍失败 ...")
+		return
+	}
+	return
+}
+
+func getDataById(id int64) (bookinfo *Book, err error )  {
+	sqlStr := `select id, title, price from book where id = ?`
+	var b Book
+	err = db.Get(&b, sqlStr, id)
+	if err != nil {
+		fmt.Println("通过id不能获取书籍的信息...")
+		return
+	}
+	return &b, nil
+
+}
+
+
+// 更新数据
+func updateBook(id int64, title string, price float64) (err error) {
+	//sqlStr := `insert into book(title, price) values (?, ?)`
+	sqlStr := `update book set title = ?, price = ? where id = ?`
+	_, err = db.Exec(sqlStr, title, price, id)
+	if err != nil {
+		fmt.Println("插入书籍信息失败")
+		return
+	}
+	return
+}

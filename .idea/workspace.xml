@@ -20,20 +20,92 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31f417cd-f3ca-414b-af71-9c867c3390ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gin.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-获取querystring参数/gin框架获取post请求的所有参数/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/书籍管理/tmpl/book/edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/03-获取querystring参数/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/03-获取querystring参数/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/书籍管理/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/书籍管理/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/书籍管理/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/书籍管理/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/书籍管理/tmpl/book/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/书籍管理/tmpl/book/book_list.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="C:\Go" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="2" />
+  </component>
+  <component name="ProjectId" id="1gMfZlT7GJZkvFf72eWqNT3eOxi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="ignore_missing_gitignore" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Colors" />
+  </component>
+  <component name="RunManager" selected="Go Build.go build gin/03-获取querystring参数/gin框架获取post请求的所有参数">
+    <configuration name="go build gin/书籍管理" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/书籍管理/main.go" />
+      <package value="gin/书籍管理" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gin/03-获取querystring参数" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/03-获取querystring参数/main.go" />
+      <package value="gin/03-获取querystring参数" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gin/03-获取querystring参数/gin框架获取post请求的所有参数" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/03-获取querystring参数/gin框架获取post请求的所有参数/main.go" />
+      <package value="gin/03-获取querystring参数/gin框架获取post请求的所有参数" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build gin/03-获取querystring参数/gin框架获取post请求的所有参数" />
+        <item itemvalue="Go Build.go build gin/书籍管理" />
+        <item itemvalue="Go Build.go build gin/03-获取querystring参数" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -44,5 +116,28 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1322" height="261" key="GridCell.Tab.0.bottom" timestamp="1597945047314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="261" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597945047314" />
+    <state width="1322" height="261" key="GridCell.Tab.0.center" timestamp="1597945047314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="261" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597945047314" />
+    <state width="1322" height="261" key="GridCell.Tab.0.left" timestamp="1597945047313">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="261" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597945047313" />
+    <state width="1322" height="261" key="GridCell.Tab.0.right" timestamp="1597945047314">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="261" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597945047314" />
+    <state x="184" y="0" key="SettingsEditor" timestamp="1597944998559">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1597944998559" />
   </component>
 </project>

@@ -17,6 +17,7 @@
             <th>ID</th>
             <th>Title</th>
             <th>Price</th>
+            <th>Action</th>
         </tr>
         <tbody>
         {{range .data }}
@@ -24,6 +25,7 @@
                 <td>{{.ID}}</td>
                 <td>{{.Title}}</td>
                 <td>{{.Price}}</td>
+                <td><a href="/book/delete?id={{.ID}}">删除</a>&nbsp;&nbsp;<a href="/book/edit?id={{.ID}}">编辑</a></td>
             </tr>
 
         {{end}}
@@ -34,6 +36,7 @@
         <th>I</th>
         <th>T</th>
         <th>P</th>
+        <th>Q</th>
         </tfoot>
     </table>
     </body>

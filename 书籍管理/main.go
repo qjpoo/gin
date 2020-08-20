@@ -106,6 +106,93 @@ func main() {
 		})
 	*/
 
+	// 删除
+	r.GET("/book/delete", func(c *gin.Context) {
+		// 取query string参数
+		id := c.Query("id")
+		idValue, err := strconv.ParseInt(id, 10, 64)
+		if err != nil {
+			c.JSON(http.StatusBadRequest, gin.H{
+				"code": 1,
+				"msg":  err,
+			})
+			return
+		}
+		// id数据没有问题
+		err = deleteBook(idValue)
+		if err != nil {
+			c.JSON(http.StatusOK, gin.H{
+				"code": 1,
+				"msg":  err,
+			})
+			return
+		}
+
+		// 删除成功之后跳转
+		c.Redirect(301, "/book/list")
+	})
+
+	// 编辑
+	r.GET("/book/edit", func(c *gin.Context) {
+		// 通过传来的id, 查找出 title, price
+		// 获取id
+		id := c.Query("id")
+		// 字符串转化了Int64
+		getId, _ := strconv.ParseInt(id, 10, 64)
+		b, err := getDataById(getId)
+		if err != nil {
+			c.JSON(http.StatusOK, gin.H{
+				"code": 1,
+				"msg":  err,
+			})
+			return
+		}
+		// 渲染edit页面
+		c.HTML(200, "book/edit.html", gin.H{
+			"code": 0,
+			"data": b,
+		})
+		//fmt.Println(b)
+	})
+
+	// 编辑完成之后,在提交到数据库里面
+	r.POST("/book/change", func(c *gin.Context) {
+		// 从form表单里面取数据
+		//如果id要从form表单里面获取的话,要在html多一个Input控件,可以把id参数放在url里面
+		//id, _ := c.GetPostForm("id")
+		//id := c.PostForm("id")
+		id := c.Query("id")
+		fmt.Println("------------------>id: ", id)
+		title := c.PostForm("title")
+		fmt.Println("------------------>title: ", title)
+		price := c.PostForm("price")
+		fmt.Println("------------------>price: ", price)
+		//fmt.Printf("%T, %v\n", title,title) // string
+		//fmt.Printf("%T, %v\n", price,price) // string
+		// 把字符的price转化成float64
+		priceValue, err := strconv.ParseFloat(price, 64)
+		if err != nil {
+			fmt.Println(err)
+		}
+		//fmt.Printf("%T, %v\n", priceValue, priceValue) // float64
+
+		// 把字符的id转化成int64
+		idValue, err := strconv.ParseInt(id, 10, 64)
+		if err != nil {
+			fmt.Println(err)
+		}
+
+
+		err = updateBook(idValue, title, priceValue)
+		if err != nil {
+			fmt.Println("更新数据失败 ...", err)
+		}
+
+		// 如果更新成功的话,就跳转到list页面
+		fmt.Println("更新数据成功 ...")
+		c.Redirect(301, "/book/list")
+	})
+
 	//queryRows()
 
 	r.Run(":8000")

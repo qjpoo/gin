@@ -1,0 +1,32 @@
+{{define "book/edit.html"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>编辑书箱信息</title>
+</head>
+<body>
+
+<form action="/book/change?id={{.data.ID}}" method="post">
+    <!--
+    <div>
+        <label>ID: </label>
+        <input type="text" name="id" value="{{.data.ID}}" >
+    </div>
+    -->
+    <div>
+        <label>书名: </label>
+        <input type="text" name="title" value="{{.data.Title}}">
+    </div>
+    <div>
+        <label>价格: </label>
+        <input value="{{.data.Price}}"  name="price"/>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+
+</body>
+</html>
+{{end}}

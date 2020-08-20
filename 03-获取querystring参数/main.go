@@ -41,6 +41,23 @@ func main() {
 
 	})
 
+	// 获取form参数
+	r.POST("/p", func(c *gin.Context) {
+		// DefaultPostForm取不到值时会返回指定的默认值
+		username := c.DefaultPostForm("username","chiling")
+		//username := c.PostForm("username")
+		address := c.PostForm("address")
+		queryStr := c.Query("age")
+		c.Params.Get("age")
+		c.JSON(200, gin.H{
+			"msg": "ok",
+			"username": username,
+			"address": address,
+			"age": queryStr,
+		})
+
+	})
+
 	//获取path参数
 	// /usr/search/chiling/honghu
 	r.GET("/user/search/:username/:address", func(c *gin.Context) {
