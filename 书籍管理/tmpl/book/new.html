@@ -1,0 +1,24 @@
+{{define "book/new.html" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增书籍信息</title>
+</head>
+<body>
+<form action="/book/create" method="post">
+    <div>
+        <label>书名: </label>
+        <input type="text" name="title">
+    </div>
+    <div>
+        <label>价格: </label>
+        <input onkeyup="value=value.replace(/[^\d\.]/g,'')" onblur="value=value.replace(/[^\d\.]/g,'')" name="price"/>
+    </div>
+    <div>
+        <input type="submit">
+    </div>
+</form>
+</body>
+</html>
+{{end}}
