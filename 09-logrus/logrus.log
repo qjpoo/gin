@@ -1,0 +1,4 @@
+time="2020-08-22T21:44:36+08:00" level=info msg=1111111111111111 fields.msg=ok fields.time="2020-08-22 21:44:36.9828365 +0800 CST m=+0.009000501" meta="hello, world"
+time="2020-08-22T21:49:08+08:00" level=info msg=1111111111111111 fields.msg=ok fields.time="2020-08-22 21:49:08.1043438 +0800 CST m=+0.009000601" meta="hello, world"
+time="2020-08-22T21:54:13+08:00" level=info msg=1111111111111111 fields.msg=ok fields.time="2020-08-22 21:54:13.6258186 +0800 CST m=+0.014000801" meta="hello, world"
+time="2020-08-22T21:57:25+08:00" level=info msg=1111111111111111 fields.msg=ok fields.time="2020-08-22 21:57:25.1267718 +0800 CST m=+0.010000601" meta="hello, world"

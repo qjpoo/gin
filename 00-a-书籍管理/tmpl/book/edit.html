@@ -7,12 +7,20 @@
 </head>
 <body>
 
+<!--这里可以把action ="" 就代表是向当前的页面提交 比如/book/change?id=7 -->
 <form action="/book/change?id={{.data.ID}}" method="post">
     <!--
     <div>
         <label>ID: </label>
         <input type="text" name="id" value="{{.data.ID}}" >
     </div>
+
+    隐藏起来
+    <input type="text" name="id" value="{{.data.ID}}} hidden">
+    或者设置成readonly属性
+    <input type="text" name="id" value="{{.data.ID}}} readonly">
+    或者
+    <input type="hidden" name="id" value="{{.data.ID}}}">
     -->
     <div>
         <label>书名: </label>

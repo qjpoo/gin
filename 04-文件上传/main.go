@@ -19,12 +19,13 @@ func main() {
 
 	// 加载模版文件
 	r.LoadHTMLFiles("./04-文件上传/index.html")
+
 	r.GET("/index", func(c *gin.Context) {
 		c.HTML(200, "index.html", nil)
 	})
 
 	r.POST("/upload", func(c *gin.Context) {
-		// 单个文件
+		// 拿到这个上传的文件
 		file, err := c.FormFile("f1")
 		if err != nil {
 			c.JSON(http.StatusInternalServerError, gin.H{
@@ -34,7 +35,8 @@ func main() {
 		}
 
 		log.Println(file)
-		dst := fmt.Sprintf("c:/tmp/%s", file.Filename)
+
+		dst := fmt.Sprintf("./04-文件上传/%s", file.Filename)
 		// 上传文件到指定的目录
 		c.SaveUploadedFile(file, dst)
 		c.JSON(http.StatusOK, gin.H{

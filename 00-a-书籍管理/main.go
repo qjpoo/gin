@@ -29,7 +29,7 @@ func main() {
 	r := gin.Default()
 
 	// 加载模板
-	r.LoadHTMLGlob("./书籍管理/tmpl/**/*")
+	r.LoadHTMLGlob("./00-a-书籍管理/tmpl/**/*")
 
 	// 查看所有的书数据
 	r.GET("/book/list", func(c *gin.Context) {
@@ -132,7 +132,7 @@ func main() {
 		c.Redirect(301, "/book/list")
 	})
 
-	// 编辑
+	// 编辑, 这里的r.GET和r.POST可以合在一起写 r.any 里面写一个if post else 判断语句
 	r.GET("/book/edit", func(c *gin.Context) {
 		// 通过传来的id, 查找出 title, price
 		// 获取id
@@ -163,6 +163,19 @@ func main() {
 		//id := c.PostForm("id")
 		id := c.Query("id")
 		fmt.Println("------------------>id: ", id)
+		// 如果id是无效的
+		if len(id) == 0 {
+			c.String(http.StatusBadRequest, "id err ...")
+			return
+		}
+
+		// 把字符的id转化成int64
+		idValue, err := strconv.ParseInt(id, 10, 64)
+		if err != nil {
+			fmt.Println(err)
+			return
+		}
+
 		title := c.PostForm("title")
 		fmt.Println("------------------>title: ", title)
 		price := c.PostForm("price")
@@ -173,14 +186,10 @@ func main() {
 		priceValue, err := strconv.ParseFloat(price, 64)
 		if err != nil {
 			fmt.Println(err)
+			return
 		}
 		//fmt.Printf("%T, %v\n", priceValue, priceValue) // float64
 
-		// 把字符的id转化成int64
-		idValue, err := strconv.ParseInt(id, 10, 64)
-		if err != nil {
-			fmt.Println(err)
-		}
 
 
 		err = updateBook(idValue, title, priceValue)
