@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Captcha</title>
+    <script type="text/javascript">
+        /**
+         * 换验证码图片
+         */
+        function change(img) {
+            img.src = 'http://localhost:8000/captcha?seed=' + Math.random();
+        }
+    </script>
+</head>
+<body>
+<div>
+    验证码: <img onclick="change(this)" border=0 src="http://localhost:8000/captcha"></a>
+</div>
+
+</body>
+</html>

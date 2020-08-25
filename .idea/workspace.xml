@@ -19,44 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31f417cd-f3ca-414b-af71-9c867c3390ef" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/05-路由分组/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-middleware-中间件/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-middleware-中间件/tmpl/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/06-middleware-中间件/tmpl/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-参数绑定/bindWith/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/07-参数绑定/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-组合查询/db.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-组合查询/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/08-组合查询/model.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/09-logrus/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/10-gin框架使用logrus/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-cookie/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-cookie/tmpl/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-cookie/tmpl/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-cookie/tmpl/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-cookie/tmpl/vip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12-session/memory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/12-session/session.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/READMe.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/handler.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/tmpl/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/tmpl/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/tmpl/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/tmpl/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/gin_demo/tmpl/vip.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-ginsession/memory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/min.go" afterDir="false" />
+    <list default="true" id="847d2c5a-1757-469f-809e-cae7ce408fc8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Gin运行多个服务/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/console-color/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gin-输出响应/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/优雅地重启或停止/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/优雅地重启或停止/实现优雅重启/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/验证码/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/验证码/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gin.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gin.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04-文件上传/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/04-文件上传/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/bms.sql" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/bms.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/model.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/tmpl/book/book_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/tmpl/book/book_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/tmpl/book/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/tmpl/book/edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/书籍管理/tmpl/book/new.html" beforeDir="false" afterPath="$PROJECT_DIR$/00-a-书籍管理/tmpl/book/new.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,23 +77,13 @@
       <recent name="C:\Users\瞿健\go\src\gin\11-cookie\tmpl" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build gin/13-ginsession/gin_demo">
-    <configuration name="go build gin" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build gin/优雅地重启或停止" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/min.go" />
-      <package value="gin" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build gin/11-cookie" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gin" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/11-cookie/main.go" />
-      <package value="gin/11-cookie" />
-      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/优雅地重启或停止/main.go" />
+      <package value="gin/优雅地重启或停止" />
       <method v="2" />
     </configuration>
     <configuration name="go build gin/13-ginsession/gin_demo" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -132,31 +95,36 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build gin/Gin运行多个服务" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/11-cookie/main.go" />
-      <package value="gin" />
-      <directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Gin运行多个服务/main.go" />
+      <package value="gin/Gin运行多个服务" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gin/优雅地重启或停止/实现优雅重启" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gin" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/优雅地重启或停止/实现优雅重启/main.go" />
+      <package value="gin/优雅地重启或停止/实现优雅重启" />
       <method v="2" />
     </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gin" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/10-gin框架使用logrus/main.go" />
-      <package value="gin" />
-      <directory value="$PROJECT_DIR$/" />
+      <filePath value="$PROJECT_DIR$/验证码/main.go" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build gin/13-ginsession/gin_demo" />
-        <item itemvalue="Go Build.go build gin" />
-        <item itemvalue="Go Build.go build main.go (1)" />
-        <item itemvalue="Go Build.go build gin/11-cookie" />
         <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Go Build.go build gin/Gin运行多个服务" />
+        <item itemvalue="Go Build.go build gin/优雅地重启或停止/实现优雅重启" />
+        <item itemvalue="Go Build.go build gin/优雅地重启或停止" />
+        <item itemvalue="Go Build.go build gin/13-ginsession/gin_demo" />
       </list>
     </recent_temporary>
   </component>
@@ -180,22 +148,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="821" y="203" key="#Notifications/0.0.1366.728@0.0.1366.728" timestamp="1598020115417" />
-    <state width="726" height="139" key="GridCell.Tab.0.bottom" timestamp="1598197398626">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="698" y="309" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1598337262588">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="698" y="309" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1598337262588" />
+    <state width="1860" height="146" key="GridCell.Tab.0.bottom" timestamp="1598350631924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="726" height="139" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1598197398626" />
-    <state width="726" height="139" key="GridCell.Tab.0.center" timestamp="1598197398625">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1860" height="146" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1598350631924" />
+    <state width="1860" height="146" key="GridCell.Tab.0.center" timestamp="1598350631924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="726" height="139" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1598197398625" />
-    <state width="726" height="139" key="GridCell.Tab.0.left" timestamp="1598197398625">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1860" height="146" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1598350631924" />
+    <state width="1860" height="146" key="GridCell.Tab.0.left" timestamp="1598350631924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="726" height="139" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1598197398625" />
-    <state width="726" height="139" key="GridCell.Tab.0.right" timestamp="1598197398626">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1860" height="146" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1598350631924" />
+    <state width="1860" height="146" key="GridCell.Tab.0.right" timestamp="1598350631924">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="726" height="139" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1598197398626" />
+    <state width="1860" height="146" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1598350631924" />
     <state x="184" y="0" key="SettingsEditor" timestamp="1597944998559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
