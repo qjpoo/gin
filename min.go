@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	uuid2 "github.com/satori/go.uuid"
+	"strconv"
 )
 
 var b = 1
@@ -27,5 +28,11 @@ func main()  {
 
 	uuid, e := uuid2.NewV4()
 	fmt.Println(uuid.String(), e)
+
+
+	t1, _ := strconv.ParseInt("3", 10, 64)
+	fmt.Println(t1)
+	t2, _ := strconv.Atoi("95")
+	fmt.Println(t2)
 
 }
